@@ -41,9 +41,11 @@
 
     <!-- jumbotron -->
     <section class="jumbotron text-center">
-      <img src="asset/img/me.jpeg" alt="sam" / width="200px" class="rounded-circle img-thumbnail">
+      <img src="asset/img/logo.jpeg" alt="sam" / width="200px" class="rounded-circle img-thumbnail">
       <h1 class="display-4">IT Solution</h1>
-      <p class="lead">Student | Web Developer</p>
+      <p class="lead">Menerima Service Laptop/PC berbagai merek</p>
+     
+                  <p>Jln. Bedugul, gang yehning No. 5, Denpasar Selatan.</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ddd" fill-opacity="1" d="M0,192L34.3,165.3C68.6,139,137,85,206,90.7C274.3,96,343,160,411,176C480,192,549,160,617,144C685.7,128,754,128,823,154.7C891.4,181,960,235,1029,245.3C1097.1,256,1166,224,1234,213.3C1302.9,203,1371,213,1406,218.7L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
     </section>
     <!-- end jumbotron -->
@@ -53,12 +55,12 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>About Me</h2>
+            <h2>About Us</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur pariatur fuga itaque sapiente atque nulla amet magni adipisci ut.</p>
+            <p>IT Solution merupakan layanan sevice Laptop/PC yang sudah berdiri sejak tahun 2015, kami mempunyai tim yang berpengalaman dalam menangani berbagai malasah seputar Laptop/PC anda. </p>
           </div>
           <!-- <div class="col-md-4">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae atque tenetur neque hic exercitationem, quasi quas, dolores repudiandae magni iusto pariatur dolorem necessitatibus non suscipit!</p>
@@ -74,47 +76,61 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>My Projects</h2>
+            <h2><font color="#ffffff" >Kami Melayani</font></h2>
           </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img src="asset/img/projects/1.jpg" class="card-img-top" alt="satu" />
+                <img src="asset/img/projects/revi.jpeg" class="card-img-top" alt="satu" />
                 <div class="card-body">
-                  <p class="card-text">dede .</p>
+                  <p class="card-text">Penggantian Baterai</p>
+                  <p>Seiring lamanya waktu pemakaian, baterai akan mengalami degradasi yang tak terhindarkan oleh karenanya kamu pasti membutuhkan perbaikan pada baterai laptop. Jenis baterai yang kami gunakan adalah suku cadang dengan kualitas terbaik dan dilengkapi dengan garansi 30 hari bersamaan dengan layanan service kami.</P>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img src="asset/img/projects/2.jpg" class="card-img-top" alt="dua" />
+                <img src="asset/img/projects/wora.jpeg" class="card-img-top" alt="dua" />
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Perbaikan Keyboard </p>
+                  <p>Umumnya kerusakan keyboard disebabkan karena kotoran yang menyumbat jalur keyboard atau pembersihan yang tidak benar. Untuk sebagian besar tombol tidak dapat diperbaiki secara terpisah dan harus mengganti keseluruhan bagian keyboard. Untuk melakukan perbaikan ini kami hanya membutuhkan waktu 1 jam.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img src="asset/img/projects/3.jpg" class="card-img-top" alt="tiga" />
+                <img src="asset/img/projects/sam.jpeg" class="card-img-top" alt="tiga" />
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">No Display/ Tidak Ada Tampilan</p>
+                  <div>Umumnya kerusakan no display atau tidak ada tampilan bisa di sebabkan oleh beberapa faktor antara lain: </div>
+                    <li>Kerusakan memori/ ram</li>
+                    <li>Kerusakan pada kabel fleksibel layar</li>
+                    <li>Gangguan pada jalur LVDS</li>
+                    <li>Chipset intel atau gpu yang lemah</li>
+                  </p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img src="asset/img/projects/4.jpg" class="card-img-top" alt="empat" />
+                <img src="asset/img/projects/dede.jpeg" class="card-img-top" alt="empat" />
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text"></p>
+                  <li>Memperbaiki laptop/PC</li>
+                  <li>Mengganti LCD laptop/PC</li>
+                  <li>Mengganti Engsel Laptop</li>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="card">
-                <img src="asset/img/projects/5.jpg" class="card-img-top" alt="lima" />
+                <img src="asset/img/projects/gery.jpeg" class="card-img-top" alt="lima" />
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text"></p>
+                  <li>Menginstall windows</li>
+                  <li>Menginstall aplikasi</li>
+                  <li>Menanyakan masalah seputar software</li>
                 </div>
               </div>
             </div>
@@ -166,7 +182,7 @@
 
     <!-- start footer -->
         <footer class="text-white text-center">
-            <p >Created with patient by <a href="https://www.instagram.com/doddysamuel_/" class="text-white fw-bold">Samuel Sianturi</a></p>
+            <p >Created with patient by <a href="https://www.instagram.com/ddjuni_/" class="text-white fw-bold">Ecy</a></p>
         </footer>       
     <!-- end footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
