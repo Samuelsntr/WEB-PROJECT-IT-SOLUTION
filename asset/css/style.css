@@ -1,7 +1,26 @@
 body {
   background-color: #ddd;
 }
+h1 {
+  font-family: 'Pacifico';
 
+  color: rgba(31, 30, 32, 0.795);
+  animation: neon 5s infinite;
+}
+@keyframes neon {
+  0%,
+  39%,
+  41%,
+  59%,
+  61%,
+  100% {
+    text-shadow: rgb(227, 199, 41) 0 0 12px, rgb(101, 135, 22) 0 0 21px, rgb(64, 187, 212) 0 0 21px;
+  }
+  40%,
+  60% {
+    text-shadow: none;
+  }
+}
 .jumbotron {
   padding-top: 6rem;
   background-image: url(bg.jpg);
