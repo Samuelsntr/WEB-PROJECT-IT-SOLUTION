@@ -1,7 +1,7 @@
-<?php $a = "konsultasi";include "header.php"; ?>
+<?php $a = "konsultasi";include "template.php"; ?>
 <div class="container">
     <div class="row">
-        <div class="col-8 m-3">
+        <div class="m-3">
             <h3>DAFTAR KONSULTASI</h3>
             <table class="table table-dark table-striped mt-3">
                 <thead>

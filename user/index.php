@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if ( !isset($_SESSION["login"])){
+  header("Location: ../login.php");
+}
+
 include "../header.php";
 include "config.php";
 ?>
@@ -20,8 +26,8 @@ include "config.php";
 </div>
 </nav>
 
-<?php if( isset($sukses)) : ?>
-  <div class="alert alert-warning alert-dismissible fade show" role="alert" style="width: 500px;">
+<?php if( isset($suksesTanya)) : ?>
+  <div class="alert alert-success alert-dismissible fade show" role="alert" style="width: 500px;">
 <strong>Thank You! </strong> Pesan kamu sudah kami terima, tunggu yaa.
 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
@@ -41,7 +47,7 @@ include "config.php";
         <div class="h-100 p-5 text-white bg-dark rounded-3">
           <h2>Service Perangkat</h2>
           <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-          <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Service Perangkat</button>
+          <a href="service.php"><button class="btn btn-outline-light" type="button">Service Perangkat</button></a>
         </div>
       </div>
       <div class="col-md-6">
@@ -80,62 +86,35 @@ include "config.php";
  <!-- MODAL 1 -->
  
  <form action="" method="post">
-   <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
        <div class="modal-content">
          <div class="modal-header">
-           <h5 class="modal-title" id="exampleModalLabel">Service Perangkat</h5>
+           <h5 class="modal-title" id="exampleModalLabel">Tanya Kita</h5>
            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form>
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Nama:</label>
+            <label for="recipient-name" class="col-form-label">Nama</label>
             <input type="text" class="form-control" id="recipient-name" name="nama" required>
           </div>
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">No. tlp:</label>
+            <label for="recipient-name" class="col-form-label">No. tlp</label>
             <input type="text" class="form-control" id="recipient-name" name="notlp" required>
           </div>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Alamat:</label>
-            <input type="text" class="form-control" id="recipient-name" name="alamat" required>
-          </div>
-          <div class="mb-3">
-            <select class="form-select" aria-label="Default select example" name="perangkat" required>
-              <option selected>Perangkat</option>
-              <option>Laptop</option>
-              <option>Komputer / PC</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <select class="form-select" id="os" aria-label="Default select example" name="os" required>
-              <option selected>Sistem Operasi</option>
-              <option>Windows</option>
-              <option>Mac OS</option>
-              <option>Linux</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <select class="form-select" aria-label="Default select example" name="payment" required>
-              <option selected>Metode Pembayaran</option>
-              <option>COD</option>
-              <option>Tranfer Bank</option>
-              <option>Lainnya</option>
-            </select>
-            <div class="mb-3">
-              <label for="message-text" class="col-form-label">Kerusakan:</label>
-              <textarea class="form-control" id="message-text" name="kerusakan" required></textarea>
+          <div>
+              <label for="message-text" class="col-form-label">Keluhan / Pertanyaan</label>
+              <textarea class="form-control" id="message-text" name="keluhan" required></textarea>
             </div>
-          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+          <button type="submit" class="btn btn-primary" name="tanya">Tanya</button>
         </div>
       </div>
     </div>
-  </div>
+  
 </form>
 
 <!-- MODAL 2 -->

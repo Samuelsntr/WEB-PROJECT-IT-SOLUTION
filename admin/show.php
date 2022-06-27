@@ -1,5 +1,5 @@
 <?php
-include "header.php";
+include "template.php";
 require "../connection.php";
 
 $id = $_GET['id'];
@@ -8,7 +8,7 @@ $result = mysqli_query($conn, "SELECT * FROM customers where id = $id");
 
 ?>
 
-    <div class="card" style="width: 18rem;">
+    <div class="card m-3" style="width: 18rem;">
     <div class="card-body">
 <?php while($cust_data = mysqli_fetch_array($result)) {
     echo "<h5 class='card-title'>".$cust_data['nama']."</h5>";

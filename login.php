@@ -1,6 +1,30 @@
 <?php
-session_start();
+include('server.php');
+// session_start();
 require 'connection.php';
+
+
+// cek cookie
+if ( isset($_COOKIE['id']) && isset($_COOKIE['key']) ) {
+  $id = $_COOKIE['id'];
+  $key = $_COOKIE['key'];
+
+  // ambil username berdasarkan id
+  $result = mysqli_query($conn, "SELECT username FROM user WHERE id = $id");
+  $row = mysqli_fetch_array($result);
+
+  // cek cookie dan username
+  if( $key === hash('sha256', $row['username']) ) {
+      $_SESSION['login'] = true;
+  }
+}
+
+if( isset($_SESSION["login"])){
+header("Location: admin/index.php");
+exit;
+}
+
+
 
 if( isset($_POST["login"]) ){
     $em = $_POST["email"];
@@ -22,7 +46,7 @@ if( isset($_POST["login"]) ){
                         setcookie('id', $row['id'], time()+60);
                         setcookie('key', hash('sha256', $row['username']), time()+60);
                     }
-            header("Location: index.php");
+            header("Location: user/index.php");
             exit;
         }
       }
@@ -125,7 +149,7 @@ if( isset($_POST["login"]) ){
     <?php endif; ?>
 
     <div class="form-floating">
-      <input type="text" class="form-control" id="email" placeholder="name@example.com" name="email">
+      <input type="text" class="form-control" id="email" placeholder="name@example.com" name="email" autocomplete="off">
       <label for="floatingInput">Email address</label>
     </div>
     <div class="form-floating">
@@ -138,10 +162,14 @@ if( isset($_POST["login"]) ){
         <input type="checkbox" value="remember-me" name="remember"> Remember me
       </label>
     </div>
-    <button class="w-100 btn btn-lg btn-primary" name="login">Sign in</button>
+    <button class="w-100 btn btn-lg btn-primary mb-1" name="login">Sign in</button>
+    <button type="button" class="w-100 btn btn-lg btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign up</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
   </form>
   </main>
+  
+  
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
@@ -149,3 +177,31 @@ if( isset($_POST["login"]) ){
 </body>
 </html>
 
+  
+          <!-- Modal -->
+<form action="" method="post">
+  <div class="modal fade" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title " id="exampleModalLabel">Register Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="container mt-2 mb-2" style="text-align: left;">
+          <label for="exampleFormControlInput1" class="form-label">Username</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="name" required autocomplete="off"><br>
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" required autocomplete="off"><br>
+          <label for="exampleFormControlInput1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleFormControlInput1" name="psw" required><br>
+          <label for="exampleFormControlInput1" class="form-label">Repeat Password</label>
+          <input type="password" class="form-control" id="exampleFormControlInput1" name="psw2" required>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" name="regis">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

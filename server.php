@@ -2,6 +2,8 @@
 require "connection.php";
 session_start();
 
+// $usernameLanding = $_SESSION['username'];
+
 // initializing variables
 $email = "";
 $errors = array(); 
@@ -49,7 +51,7 @@ if (isset($_POST['regis'])) {
       echo "<script>
       alert('Berhasil daftar');
       </script>";
-      header("Refresh:0; url=index.php");
+      header("Refresh:0; url=login.php");
   }
 }
 
