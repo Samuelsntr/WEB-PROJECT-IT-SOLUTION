@@ -14,7 +14,6 @@
         header("Refresh:10; url=index.php");
     }
 
-
 	// Check If form submitted, insert form data into users table.
 	if(isset($_POST['submit'])) {
 		$nama = $_POST['nama'];

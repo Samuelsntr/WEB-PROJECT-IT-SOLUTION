@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
 
-    <title>My Portfolio</title>
+    <title>IT SOLUTION</title>
     <link rel="stylesheet" href="asset/css/style.css" />
   </head>
   <body id="home">
@@ -41,9 +41,9 @@
 
     <!-- jumbotron -->
     <section class="jumbotron text-center">
-      <img src="asset/img/me.jpeg" alt="sam" / width="200px" class="rounded-circle img-thumbnail">
+      <img src="asset/img/logo2.jpg" alt="logo" / width="200px" class="rounded-circle img-thumbnail">
       <h1 class="display-4">IT Solution</h1>
-      <p class="lead">Student | Web Developer</p>
+      <p class="lead">Company</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ddd" fill-opacity="1" d="M0,192L34.3,165.3C68.6,139,137,85,206,90.7C274.3,96,343,160,411,176C480,192,549,160,617,144C685.7,128,754,128,823,154.7C891.4,181,960,235,1029,245.3C1097.1,256,1166,224,1234,213.3C1302.9,203,1371,213,1406,218.7L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
     </section>
     <!-- end jumbotron -->
@@ -166,7 +166,7 @@
 
     <!-- start footer -->
         <footer class="text-white text-center">
-            <p >Created with patient by <a href="https://www.instagram.com/doddysamuel_/" class="text-white fw-bold">Samuel Sianturi</a></p>
+            <p >create by<a href="https://www.instagram.com/ddjuni_/" class="text-white fw-bold">Poccy</a></p>
         </footer>       
     <!-- end footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
